@@ -1,0 +1,60 @@
+\documentclass[11pt]{article}
+
+% Paquetes necesarios
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,english]{babel}
+\usepackage{ifthen}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[left=1.06cm,top=1.7cm,right=1.06cm,bottom=0.49cm]{geometry}
+\setlength{\parindent}{0pt} % Eliminar sangría en nuevos párrafos
+
+% Variable para el idioma
+\newcommand{\idioma}{espanol} % Opciones: 'espanol', 'english'
+
+% Configuración del idioma
+\ifthenelse{\equal{\idioma}{espanol}}{
+    \selectlanguage{spanish}
+}{
+    \selectlanguage{english}
+}
+
+\begin{document}
+
+% Conctact information
+\input{sections/0_contact_info}
+
+% Experience
+\input{sections/1_experience}
+
+% Education
+\input{sections/2_education}
+\input{sections/2a_education_courses}
+\input{sections/2b_education_conferences}
+
+% Skills
+\input{sections/3_skills}
+\input{sections/3a_skills_technical}
+\input{sections/3b_skills_competencies}
+
+% Academic Publications
+\input{sections/4_academic_publications}
+
+% Presentations and Recognitions
+\input{sections/5_presentations_recognitions}
+\input{sections/5a_presentations}
+\input{sections/5b_competitions}
+\input{sections/5c_recognitions}
+
+% Personal Projects
+\input{sections/6_personal_projects}
+
+% Languages
+\input{sections/7_languages}
+
+% Additional Information
+\input{sections/8_additional_information}
+
+\end{document}
