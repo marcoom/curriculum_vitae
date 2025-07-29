@@ -12,7 +12,7 @@
 \setlength{\parindent}{0pt} % Eliminar sangría en nuevos párrafos
 
 % Variable para el idioma
-\newcommand{\idioma}{espanol} % Opciones: 'espanol', 'english'
+\newcommand{\idioma}{english} % Opciones: 'espanol', 'english'
 
 % Configuración del idioma
 \ifthenelse{\equal{\idioma}{espanol}}{
@@ -26,35 +26,39 @@
 % Conctact information
 \input{sections/0_contact_info}
 
+% Summary
+\input{sections/1_summary}
+
 % Experience
-\input{sections/1_experience}
+\input{sections/2_experience}
 
 % Education
-\input{sections/2_education}
-\input{sections/2a_education_courses}
-\input{sections/2b_education_conferences}
+\input{sections/3_education}
+%\input{sections/3a_ALL_education_courses}
+\input{sections/3a_LESS_education_courses}
+%\input{sections/3b_education_conferences}
 
 % Skills
-\input{sections/3_skills}
-\input{sections/3a_skills_technical}
-\input{sections/3b_skills_competencies}
+\input{sections/4_skills}
+\input{sections/4a_skills_technical}
+\input{sections/4b_skills_soft}
 
 % Academic Publications
-\input{sections/4_academic_publications}
+\input{sections/5_academic_publications}
 
 % Presentations and Recognitions
-\input{sections/5_presentations_recognitions}
-\input{sections/5a_presentations}
-\input{sections/5b_competitions}
-\input{sections/5c_recognitions}
+\input{sections/6_presentations_recognitions}
+\input{sections/6a_presentations}
+\input{sections/6b_competitions}
+%\input{sections/6c_recognitions}
 
 % Personal Projects
-\input{sections/6_personal_projects}
+\input{sections/7_personal_projects}
 
 % Languages
-\input{sections/7_languages}
+\input{sections/8_languages}
 
 % Additional Information
-\input{sections/8_additional_information}
+%\input{sections/9_additional_information}
 
 \end{document}
