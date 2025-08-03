@@ -10,13 +10,17 @@
 \usepackage{hyperref}
 \usepackage[left=1.06cm,top=1.7cm,right=1.06cm,bottom=0.49cm]{geometry}
 \setlength{\parindent}{0pt} % Eliminar sangría en nuevos párrafos
+\usepackage{needspace} % titulos no se separan del texto en saltos de pag
 
-% Variable para el idioma
-\newcommand{\idioma}{espanol} % Opciones: 'espanol', 'english'
+% ********** VARIABLES CONFIGURABLES **********
 
-% Configuración del idioma
+\newcommand{\idioma}{english} % Opciones: 'espanol', 'english'
+\newcommand{\spacesection}{12pt} % Espaciado entre secciones (titulos)
+
+% *********************************************
+
 \ifthenelse{\equal{\idioma}{espanol}}{
-    \selectlanguage{espanol}
+    \selectlanguage{spanish}
 }{
     \selectlanguage{english}
 }
@@ -35,8 +39,6 @@
 % Education
 \input{sections/3_education}
 %\input{sections/3a_ALL_education_courses}
-
-\newpage
 \input{sections/3a_LESS_education_courses}
 %\input{sections/3b_education_conferences}
 
