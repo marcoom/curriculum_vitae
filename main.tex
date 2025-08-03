@@ -10,11 +10,15 @@
 \usepackage{hyperref}
 \usepackage[left=1.06cm,top=1.7cm,right=1.06cm,bottom=0.49cm]{geometry}
 \setlength{\parindent}{0pt} % Eliminar sangría en nuevos párrafos
+\usepackage{needspace} % titulos no se separan del texto en saltos de pag
 
-% Variable para el idioma
+% ********** VARIABLES CONFIGURABLES **********
+
 \newcommand{\idioma}{english} % Opciones: 'espanol', 'english'
+\newcommand{\spacesection}{12pt} % Espaciado entre secciones (titulos)
 
-% Configuración del idioma
+% *********************************************
+
 \ifthenelse{\equal{\idioma}{espanol}}{
     \selectlanguage{spanish}
 }{
