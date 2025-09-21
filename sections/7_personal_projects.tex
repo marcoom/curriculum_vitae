@@ -1,5 +1,5 @@
 % Proyectos personales
-\Needspace{5\baselineskip} % titulos no se separan del texto
+\Needspace{3\baselineskip} % titulos no se separan del texto
 \begin{center}
     \textbf{\ifthenelse{\equal{\idioma}{espanol}}{Proyectos Personales}{Personal Projects}}
 \end{center}
@@ -8,11 +8,23 @@
     % License Plate Detector
     \item \ifthenelse{\equal{\idioma}{espanol}}{Desarrollé un \textbf{detector de patentes vehiculares en tiempo real} que integra YOLOv8, DeepSORT y EasyOCR, con una interfaz web interactiva basada en Gradio.}{Developed a \textbf{real‑time license‑plate detector} combining YOLOv8, DeepSORT and EasyOCR, featuring an interactive Gradio‑based web UI.}
 
-    % Household Energy Forecasting
-    \item \ifthenelse{\equal{\idioma}{espanol}}{Construí un \textbf{sistema de pronóstico de consumo eléctrico residencial} que abarca EDA, ingeniería de características y modelos FFNN, Prophet y Random Forest, evaluados rigurosamente para optimizar la planificación energética doméstica.}{Built a \textbf{household electricity‑consumption forecasting system} covering EDA, feature engineering, and FFNN, Prophet and Random Forest models, rigorously evaluated to enhance household energy planning.}
+    % Health Anomaly Detector
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Diseñé un \textbf{sistema de monitoreo tipo wearable} que genera signos vitales sintéticos, aplica detección de anomalías no supervisada personalizada por usuario y publica resultados en paneles Grafana sobre stack TIG (Telegraf, InfluxDB, Grafana) orquestado con Docker Compose.}{Designed a \textbf{wearable-style monitoring system} that generates synthetic vitals, applies per-user unsupervised anomaly detection, and streams results to Grafana dashboards on a TIG stack (Telegraf, InfluxDB, Grafana) orchestrated with Docker Compose.}
 
     % Interactive Adventure Generator
     \item \ifthenelse{\equal{\idioma}{espanol}}{Implementé un \textbf{generador de aventuras interactivas impulsado por LLM} que narra historias ramificadas con voz y texto bilingüe (EN/ES), usando LangChain para flujo agéntico, Whisper para STT y Piper para TTS.}{Implemented an \textbf{LLM‑powered interactive adventure generator} that narrates branching stories with bilingual (EN/ES) voice and text, leveraging LangChain for agentic flow, Whisper for STT, and Piper for TTS.}
+
+    % CNN Digits Detector
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Desarrollé un \textbf{sistema interactivo de reconocimiento de dígitos manuscritos} con una CNN cuidadosamente regularizada entrenada en MNIST con aumentos, ofreciendo inferencia en tiempo real vía Gradio y alcanzando \(99.49\%\) de accuracy en test.}{Developed an \textbf{interactive handwritten digit recognition system} using a carefully regularized CNN trained on MNIST with augmentations, delivering real-time inference via Gradio and achieving \(99.49\%\) test accuracy.}
+    
+    % WeatherFlow
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Construí un \textbf{pipeline de ETL en tiempo real con Apache Airflow} (Docker) que extrae clima de OpenWeatherMap, normaliza y carga en PostgreSQL con cargas masivas idempotentes, monitoreo de API y ejecución cada 10 minutos con manejo de fallos y prevención de duplicados.}{Built a \textbf{real-time Apache Airflow ETL pipeline} (Docker) that ingests OpenWeatherMap weather data, normalizes it, and bulk-loads into PostgreSQL with idempotency, API monitoring, and a 10-minute schedule featuring failure handling and duplicate prevention.}
+    
+    % Survival Probability Simulator
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Implementé una \textbf{aplicación interactiva de predicción de probabilidad de supervivencia} con un clasificador Random Forest y UI en Streamlit, respaldada por EDA integral y un pipeline de datos listo para producción contenedorizado con Docker.}{Implemented an \textbf{interactive survival-probability prediction app} using a Random Forest classifier with a Streamlit UI, supported by comprehensive EDA and a production-ready, Docker-containerized data pipeline.}
+
+    % Household Energy Forecasting
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Construí un \textbf{sistema de pronóstico de consumo eléctrico residencial} que abarca EDA, ingeniería de características y modelos FFNN, Prophet y Random Forest, evaluados rigurosamente para optimizar la planificación energética doméstica.}{Built a \textbf{household electricity‑consumption forecasting system} covering EDA, feature engineering, and FFNN, Prophet and Random Forest models, rigorously evaluated to enhance household energy planning.}
 
     % Blood Smear Counter
     \item \ifthenelse{\equal{\idioma}{espanol}}{Desarrollé en equipo una \textbf{plataforma para automatizar conteo de glóbulos rojos, blancos y plaquetas} en imágenes de muestras de sangre, utilizando técnicas clásicas de procesamiento de imágenes.}{Developed a \textbf{platform to automate the counting of red, white, and platelet blood cells} in images of blood samples, using classic image processing techniques.}
