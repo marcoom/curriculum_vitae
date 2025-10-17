@@ -1,0 +1,75 @@
+% Proyectos personales
+\Needspace{3\baselineskip} % titulos no se separan del texto
+\begin{center}
+    \textbf{\ifthenelse{\equal{\idioma}{espanol}}{Proyectos Personales}{Personal Projects}}
+\end{center}
+
+\ifthenelse{\equal{\idioma}{espanol}}{
+He desarrollado un portafolio diverso de proyectos de IA e ingeniería de datos que cubren áreas clave de la inteligencia artificial—desde visión por computadora y NLP hasta machine learning e infraestructura de datos. Cada proyecto se desarrolla de forma end-to-end con prácticas listas para producción, incluyendo contenedorización, interfaces interactivas y documentación integral.
+}{
+I have developed a diverse portfolio of AI and data engineering projects covering key areas of artificial intelligence—from computer vision and NLP to machine learning and data infrastructure. Each project is built end-to-end with production-ready practices including containerization, interactive interfaces, and comprehensive documentation.
+}
+
+\ifthenelse{\equal{\idioma}{espanol}}{Algunos proyectos relevantes incluyen:}{Some relevant projects include:}
+
+
+\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt]
+     % License Plate Detector
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Desarrollé un \textbf{detector de patentes vehiculares en tiempo real} que integra YOLOv8, DeepSORT y EasyOCR, con una interfaz web interactiva basada en Gradio.}{Developed a \textbf{real‑time license‑plate detector} combining YOLOv8, DeepSORT and EasyOCR, featuring an interactive Gradio‑based web UI.}
+
+    % AutoCBC
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Desarrollé \textbf{AutoCBC, un sistema automatizado de conteo de células sanguíneas mediante IA} que analiza imágenes de frotis de sangre usando un pipeline de dos etapas (YOLO para detección + SAM2 para segmentación), entregando resultados en segundos con visualización interactiva en Streamlit.}{Developed \textbf{AutoCBC, an AI-powered automated blood cell counting system} that analyzes blood smear microscopy images using a two-stage pipeline (YOLO detection + SAM2 segmentation), delivering results in seconds with interactive Streamlit visualization.}
+
+    % OpenGPT Chat
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Construí \textbf{OpenGPT Chat, una plataforma de chat con IA local completamente offline} que integra LLMs auto-hospedados (Ollama), RAG sobre documentos privados con base de datos vectorial (Qdrant), capacidades agénticas y automatización de workflows (n8n) en un stack unificado orquestado con Docker Compose.}{Built \textbf{OpenGPT Chat, a fully offline local AI chat platform} integrating self-hosted LLMs (Ollama), RAG over private documents with vector database (Qdrant), agentic capabilities, and workflow automation (n8n) into a unified stack orchestrated with Docker Compose.}
+
+    % Interactive Adventure Generator
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Implementé un \textbf{generador de aventuras interactivas impulsado por LLM} que narra historias ramificadas con voz y texto bilingüe (EN/ES), usando LangChain para flujo agéntico, Whisper para STT y Piper para TTS.}{Implemented an \textbf{LLM‑powered interactive adventure generator} that narrates branching stories with bilingual (EN/ES) voice and text, leveraging LangChain for agentic flow, Whisper for STT, and Piper for TTS.}
+
+    % Health Anomaly Detector
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Diseñé un \textbf{sistema de monitoreo tipo wearable} que genera signos vitales sintéticos, aplica detección de anomalías no supervisada personalizada por usuario y publica resultados en paneles Grafana sobre stack TIG (Telegraf, InfluxDB, Grafana) orquestado con Docker Compose.}{Designed a \textbf{wearable-style monitoring system} that generates synthetic vitals, applies per-user unsupervised anomaly detection, and streams results to Grafana dashboards on a TIG stack (Telegraf, InfluxDB, Grafana) orchestrated with Docker Compose.}
+    
+    % Lunar Lander RL Controller
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Desarrollé un \textbf{controlador de aterrizaje lunar con aprendizaje por refuerzo profundo} usando DQN entrenado durante 1M timesteps en Gymnasium's LunarLander-v3, con interfaz terminal que permite alternar entre control manual y agente IA pre-entrenado con Stable-Baselines3.}{Developed a \textbf{deep reinforcement learning lunar landing controller} using DQN trained over 1M timesteps in Gymnasium's LunarLander-v3, featuring a terminal interface enabling seamless switching between manual control and pre-trained AI agent with Stable-Baselines3.}
+
+    % Whisper Studio
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Implementé \textbf{Whisper Studio, una interfaz gráfica para el motor de transcripción Whisper de OpenAI} que procesa audio/video localmente en 99 idiomas con 6 tamaños de modelo, grabación por micrófono y múltiples formatos de salida (txt, srt, vtt, json) sin APIs externas.}{Implemented \textbf{Whisper Studio, a graphical interface for OpenAI's Whisper speech-to-text engine} that processes audio/video locally across 99 languages with 6 model sizes, microphone recording, and multiple output formats (txt, srt, vtt, json) without external APIs.}
+
+    % WeatherFlow
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Construí un \textbf{pipeline de ETL en tiempo real con Apache Airflow} (Docker) que extrae clima de OpenWeatherMap, normaliza y carga en PostgreSQL con cargas masivas idempotentes, monitoreo de API y ejecución cada 10 minutos con manejo de fallos y prevención de duplicados.}{Built a \textbf{real-time Apache Airflow ETL pipeline} (Docker) that ingests OpenWeatherMap weather data, normalizes it, and bulk-loads into PostgreSQL with idempotency, API monitoring, and a 10-minute schedule featuring failure handling and duplicate prevention.}
+
+    % CNN Digits Detector
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Desarrollé un \textbf{sistema interactivo de reconocimiento de dígitos manuscritos} con una CNN cuidadosamente regularizada entrenada en MNIST con aumentos, ofreciendo inferencia en tiempo real vía Gradio y alcanzando \(99.49\%\) de accuracy en test.}{Developed an \textbf{interactive handwritten digit recognition system} using a carefully regularized CNN trained on MNIST with augmentations, delivering real-time inference via Gradio and achieving \(99.49\%\) test accuracy.}
+    
+    % Survival Probability Simulator
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Implementé una \textbf{aplicación interactiva de predicción de probabilidad de supervivencia} con un clasificador Random Forest y UI en Streamlit, respaldada por EDA integral y un pipeline de datos listo para producción contenedorizado con Docker.}{Implemented an \textbf{interactive survival-probability prediction app} using a Random Forest classifier with a Streamlit UI, supported by comprehensive EDA and a production-ready, Docker-containerized data pipeline.}
+
+    % Household Energy Forecasting
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Construí un \textbf{sistema de pronóstico de consumo eléctrico residencial} que abarca EDA, ingeniería de características y modelos FFNN, Prophet y Random Forest, evaluados rigurosamente para optimizar la planificación energética doméstica.}{Built a \textbf{household electricity‑consumption forecasting system} covering EDA, feature engineering, and FFNN, Prophet and Random Forest models, rigorously evaluated to enhance household energy planning.}
+
+    % Crypto Bot
+    \item \ifthenelse{\equal{\idioma}{espanol}}{Desarrollé un sistema de \textbf{predicción de índices bursátiles} basado en análisis históricos de series temporales y análisis de sentimiento, logrando una precisión del 90\% en este último apartado.}{Developed a \textbf{stock index prediction system} based on historical time series analysis and sentiment analysis, achieving 90\% accuracy in the latter.}
+
+    % Blood Smear Counter
+    %\item \ifthenelse{\equal{\idioma}{espanol}}{Desarrollé en equipo una \textbf{plataforma para automatizar conteo de glóbulos rojos, blancos y plaquetas} en imágenes de muestras de sangre, utilizando técnicas clásicas de procesamiento de imágenes.}{Developed a \textbf{platform to automate the counting of red, white, and platelet blood cells} in images of blood samples, using classic image processing techniques.}
+
+    % Arduino Sensor and Actuator
+    %\item \ifthenelse{\equal{\idioma}{espanol}}{Diseñé e implementé un \textbf{sensor y actuador} con Arduino para aplicaciones ganaderas, que enciende y apaga calefactores, luces y ventiladores en función del horario y la temperatura y humedad sensadas.}{Designed and implemented a\textbf{ sensor and actuator} with Arduino for livestock applications, which turns heaters, lights, and fans on and off based on time and sensed temperature and humidity.}
+
+    % Raspberry Server
+    %\item \ifthenelse{\equal{\idioma}{espanol}}{Implementé un \textbf{servidor local} que cumple funciones de Network Attached Storage (NAS), servidor de video, descarga automática de contenido, bloqueo de publicidad y domótica usando Raspberry Pi.}{Implemented a \textbf{local server} functioning as Network Attached Storage (NAS), video server, automatic content downloader, ad blocker, and home automation using Raspberry Pi.}
+
+    % Tablet Adapter
+    %\item \ifthenelse{\equal{\idioma}{espanol}}{Diseñé e imprimí en 3D un \textbf{complemento para Tablet} que permite adaptarla para ser usada con Joystick sin perder las funcionalidades de carga y control de volumen.}{Designed and 3D printed an \textbf{add-on for a tablet} that allows it to be used with a joystick without losing charging and volume control functionalities.}
+    
+\end{itemize}
+
+\vspace{8pt}
+
+\ifthenelse{\equal{\idioma}{espanol}}{
+Para más detalles sobre los proyectos y ver la lista completa, por favor visite mi \href{https://github.com/marcoom}{perfil de GitHub}.
+}{
+For additional details on the projects and to see the full project list, please visit my \href{https://github.com/marcoom}{GitHub profile}.
+}
+
+\vspace{\spacesection}
