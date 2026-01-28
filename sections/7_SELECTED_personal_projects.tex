@@ -1,0 +1,27 @@
+% Proyectos personales
+\Needspace{3\baselineskip} % titulos no se separan del texto
+\begin{center}
+    \textbf{\ifthenelse{\equal{\idioma}{espanol}}{Proyectos Seleccionados}{Selected Projects}}
+\end{center}
+
+\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=12pt]
+    \item \ifthenelse{\equal{\idioma}{espanol}}{
+    \textbf{Plataforma LLM local con RAG (n8n)}: Chat offline con LLMs auto-hospedados (Ollama) + RAG sobre documentos privados (embeddings + vector DB Qdrant) y automatización de workflows con n8n, orquestado con Docker Compose.
+    }{
+    \textbf{Local LLM + RAG Platform (n8n)}: Offline chat with self-hosted LLMs (Ollama) + RAG over private documents (embeddings + Qdrant vector DB) and workflow automation via n8n, orchestrated with Docker Compose.
+    }
+
+    \item \ifthenelse{\equal{\idioma}{espanol}}{
+    \textbf{Reconocimiento de patentes}: Detección de patentes (YOLO) + tracking (DeepSORT) + lectura (EasyOCR), con UI web en Gradio.
+    }{
+    \textbf{License Plate Recognition}: Real-time license plate detection (YOLO) + tracking (DeepSORT) + reading (EasyOCR), featuring a Gradio web UI.
+    }
+
+    %\item \ifthenelse{\equal{\idioma}{espanol}}{
+    %\textbf{Sistema multi-agente (CrewAI)}: Pipeline con 7 agentes que transforma CVs en entregables estructurados (ATS/job-specific), validando contenido y generando PDFs estilo Harvard (\LaTeX) vía Streamlit; empaquetado y reproducible (Docker).
+    %}{
+    %\textbf{Multi-agent LLM System (CrewAI)}: 7-agent pipeline that produces structured ATS/job-specific outputs, validates content, and generates Harvard-style PDFs (\LaTeX) via Streamlit; packaged for reproducibility (Docker).
+    %}
+\end{itemize}
+
+\vspace{\spacesection}

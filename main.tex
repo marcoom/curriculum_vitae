@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[10pt]{article} % Font size
 
 % Paquetes necesarios
 \usepackage[utf8]{inputenc}
@@ -8,14 +8,14 @@
 \usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage{hyperref}
-\usepackage[left=1.06cm,top=1.7cm,right=1.06cm,bottom=0.49cm]{geometry}
+\usepackage[a4paper, left=1.06cm, top=0.8cm, right=1.06cm, bottom=0.8cm]{geometry} % Paper and margins
 \setlength{\parindent}{0pt} % Eliminar sangría en nuevos párrafos
 \usepackage{needspace} % titulos no se separan del texto en saltos de pag
 
 % ********** VARIABLES CONFIGURABLES **********
 
 \newcommand{\idioma}{english} % Opciones: 'espanol', 'english'
-\newcommand{\spacesection}{12pt} % Espaciado entre secciones (titulos)
+\newcommand{\spacesection}{6pt} % Espaciado entre secciones (titulos)
 
 % *********************************************
 
@@ -57,11 +57,12 @@
 %\input{sections/6c_recognitions}
 
 % Personal Projects
-\input{sections/7_ALL_personal_projects}
-%\input{sections/7_LESS_personal_projects}
+%\input{sections/7_DETAILED_personal_projects}
+%\input{sections/7_SUMMARIZED_personal_projects}
+\input{sections/7_SELECTED_personal_projects}
 
 % Languages
-\input{sections/8_languages}
+%\input{sections/8_languages}
 
 % Additional Information
 %\input{sections/9_additional_information}
