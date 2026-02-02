@@ -5,23 +5,94 @@
 \end{center}
 
 \begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=12pt]
-    \item \ifthenelse{\equal{\idioma}{espanol}}{
-    \textbf{Plataforma LLM local con RAG (n8n)}: Chat offline con LLMs auto-hospedados (Ollama) + RAG sobre documentos privados (embeddings + vector DB Qdrant) y automatización de workflows con n8n, orquestado con Docker Compose.
-    }{
-    \textbf{Local LLM + RAG Platform (n8n)}: Offline chat with self-hosted LLMs (Ollama) + RAG over private documents (embeddings + Qdrant vector DB) and workflow automation via n8n, orchestrated with Docker Compose.
-    }
+
+    % *************************************
+    % LLMs & NLP
 
     \item \ifthenelse{\equal{\idioma}{espanol}}{
-    \textbf{Reconocimiento de patentes}: Detección de patentes (YOLO) + tracking (DeepSORT) + lectura (EasyOCR), con UI web en Gradio.
+    \textbf{Plataforma LLM local con RAG (n8n)}: Chat offline con LLMs auto-hospedados (Ollama) + RAG sobre documentos privados (embeddings + vector DB Qdrant) y automatización de workflows con n8n.
     }{
-    \textbf{License Plate Recognition}: Real-time license plate detection (YOLO) + tracking (DeepSORT) + reading (EasyOCR), featuring a Gradio web UI.
+    \textbf{Local LLM + RAG Platform (n8n)}: Offline chat with self-hosted LLMs (Ollama) + RAG over private documents (embeddings + Qdrant vector DB) and workflow automation via n8n.
     }
 
-    %\item \ifthenelse{\equal{\idioma}{espanol}}{
-    %\textbf{Sistema multi-agente (CrewAI)}: Pipeline con 7 agentes que transforma CVs en entregables estructurados (ATS/job-specific), validando contenido y generando PDFs estilo Harvard (\LaTeX) vía Streamlit; empaquetado y reproducible (Docker).
-    %}{
-    %\textbf{Multi-agent LLM System (CrewAI)}: 7-agent pipeline that produces structured ATS/job-specific outputs, validates content, and generates Harvard-style PDFs (\LaTeX) via Streamlit; packaged for reproducibility (Docker).
-    %}
+    % \item \ifthenelse{\equal{\idioma}{espanol}}{
+    % \textbf{Sistema multi-agente (CrewAI)}: 7 agentes que optimizan CVs por oferta (ATS/job-specific), validan contenido e incorporan keywords relevantes, generando PDFs estilo Harvard (\LaTeX).
+    % }{
+    % \textbf{Multi-agent LLM System (CrewAI)}: 7 agents that optimize resumes per job (ATS/job-specific), validate content and inject relevant keywords, generating Harvard-style PDFs (\LaTeX).
+    % }
+
+    % \item \ifthenelse{\equal{\idioma}{espanol}}{
+    % \textbf{Generador de aventuras (LLM)}: Historias ramificadas con voz y texto bilingüe (EN/ES), usando LangChain para flujo agéntico, Whisper para STT y Piper para TTS.
+    % }{
+    % \textbf{Interactive Adventure Generator (LLM)}: Branching stories with bilingual (EN/ES) voice and text, using LangChain for agentic flow, Whisper for STT, and Piper for TTS.
+    % }
+
+    % \item \ifthenelse{\equal{\idioma}{espanol}}{
+    % \textbf{Whisper Studio (STT local)}: Transcripción/traducción local con Whisper (99 idiomas, 6 modelos), grabación por micrófono y export (txt/srt/vtt/json), sin APIs externas.
+    % }{
+    % \textbf{Whisper Studio (Local STT)}: Local transcription/translation with Whisper (99 languages, 6 models), microphone recording and exports (txt/srt/vtt/json), no external APIs.
+    % }
+
+    % *************************************
+    % COMPUTER VISION
+
+    \item \ifthenelse{\equal{\idioma}{espanol}}{
+    \textbf{Reconocimiento de patentes}: Detección de patentes (YOLO) + tracking (DeepSORT) + lectura (EasyOCR) en tiempo real.
+    }{
+    \textbf{License Plate Recognition}: Real-time license plate detection (YOLO) + tracking (DeepSORT) + reading (EasyOCR).
+    }
+
+    % \item \ifthenelse{\equal{\idioma}{espanol}}{
+    % \textbf{AutoCBC (YOLO + SAM)}: Conteo automatizado de células sanguíneas en microscopía mediante pipeline de detección + segmentación, con métricas y visualización interactiva.
+    % }{
+    % \textbf{AutoCBC (YOLO + SAM)}: Automated blood-cell counting from microscopy images via detection + segmentation pipeline, with metrics and interactive visualization.
+    % }
+
+    % \item \ifthenelse{\equal{\idioma}{espanol}}{
+    % \textbf{Clasificador de dígitos (CNN)}: Reconocimiento de dígitos manuscritos (MNIST) con inferencia en tiempo real, logrando \(99.49\%\) de accuracy en test.
+    % }{
+    % \textbf{Handwritten Digits (CNN)}: MNIST digit recognition with real-time inference, achieving \(99.49\%\) test accuracy.
+    % }
+
+    % *************************************
+    % MACHINE LEARNING
+
+    % \item \ifthenelse{\equal{\idioma}{espanol}}{
+    % \textbf{Health Anomaly Detector (TIG)}: Simulación de signos vitales + detección de anomalías no supervisada por usuario, publicando métricas y alertas sobre stack TIG (Telegraf/InfluxDB/Grafana).
+    % }{
+    % \textbf{Health Anomaly Detector (TIG)}: Synthetic vitals + per-user unsupervised anomaly detection, publishing metrics and alerts on a TIG stack (Telegraf/InfluxDB/Grafana).
+    % }
+
+    % \item \ifthenelse{\equal{\idioma}{espanol}}{
+    % \textbf{WeatherFlow (Airflow ETL)}: Pipeline en Airflow que ingesta OpenWeatherMap y carga PostgreSQL cada 10 min con idempotencia, monitoreo y manejo de fallos.
+    % }{
+    % \textbf{WeatherFlow (Airflow ETL)}: Airflow pipeline that ingests OpenWeatherMap and loads PostgreSQL every 10 min with idempotency, monitoring, and failure handling.
+    % }
+
+    % \item \ifthenelse{\equal{\idioma}{espanol}}{
+    % \textbf{Lunar Lander RL (DQN)}: Agente DQN entrenado en LunarLander-v3, con modo manual vs IA y cambio fluido mediante interfaz por terminal.
+    % }{
+    % \textbf{Lunar Lander RL (DQN)}: DQN agent trained on LunarLander-v3, with manual vs AI control and seamless switching via terminal interface.
+    % }
+
+    % \item \ifthenelse{\equal{\idioma}{espanol}}{
+    % \textbf{Pronóstico de consumo eléctrico}: Forecasting de consumo residencial con modelos FFNN/Prophet/RF y evaluación rigurosa para comparar desempeño.
+    % }{
+    % \textbf{Household Energy Forecasting}: Residential energy forecasting with FFNN/Prophet/RF models and rigorous evaluation for performance comparison.
+    % }
+
+    % \item \ifthenelse{\equal{\idioma}{espanol}}{
+    % \textbf{Predicción de mercado + sentimiento}: Modelo de sentimiento en tweets financieros (RoBERTa) combinado con features de precios para predecir movimientos de índice.
+    % }{
+    % \textbf{Market + Sentiment Prediction}: RoBERTa-based sentiment on finance tweets combined with price features to model index movements.
+    % }
+
+    % \item \ifthenelse{\equal{\idioma}{espanol}}{
+    % \textbf{Survival Simulator (RF)}: Predicción de probabilidad de supervivencia con Random Forest, respaldada por EDA integral y pipeline reproducible.
+    % }{
+    % \textbf{Survival Simulator (RF)}: Survival-probability prediction with a Random Forest model, backed by comprehensive EDA and a reproducible pipeline.
+    % }
+    
 \end{itemize}
 
 \vspace{\spacesection}
